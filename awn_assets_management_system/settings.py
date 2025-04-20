@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*^hcy2r0-o%%9@jl6*(7)u0j6_588o)bck*o(ouy1#o)hny8rq'
+SECRET_KEY = 'r#0jhhk1tw!r7n!kxl2y=k9lj9(b-x)k7ocr%+(2$_v9ak%ytz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -62,7 +62,10 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+
+]
 
 CORS_ALLOWED_ORIGINS = [ # also add here
     'http://localhost:5173',  # Vue.js development server
